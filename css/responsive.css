@@ -1,0 +1,244 @@
+/* =========================================
+                Mobile Menu
+============================================ */
+
+.navbar-header {
+    position: relative;
+}
+
+#mobile-nav-open-btn {
+    font-size:22px;
+    color: #FFFFFF;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    /* hide mobile nav open btn */
+}
+
+#mobile-nav {
+    /* by default, mobile nav will be hidden with height 0% */
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    overflow-y: hidden;
+}
+
+#mobile-nav-close-btn {
+    /* font-family: "Raleway", sans-serif; */
+    font-size: 70px;
+    color: #212226;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+#mobile-nav-content {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+
+#mobile-nav ul li {
+    margin-bottom: 20px;
+}
+
+#mobile-nav a {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: #212226;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+    color: #f4c613;
+    background: none;
+}
+
+
+/* Mobile nav scroll spy active state */
+
+.white-nav-top #mobile-nav ul.navbar-nav>li>a.active {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+
+/*==================================================
+			Bootstrap 3 Media Queries        
+==================================================*/
+
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+
+}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+ 
+    /* show mobile nav open btn */
+    #mobile-nav-open-btn {
+        display: block;
+    }
+    
+
+   .white-nav-top #mobile-nav-open-btn {
+        top: 20px
+    }
+   
+}
+
+
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+
+@media (max-width: 767px) {
+    /* Navigaiton */
+
+    .site-nav-wrapper,
+    .white-nav-top {
+        padding: 5px;
+    }
+    
+    
+    /* show mobile nav open btn */
+    #mobile-nav-open-btn {
+        display: block;
+    }
+
+    
+   
+}
+
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+
+@media (max-width: 480px) {
+   
+}
+
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+
+@media (max-width: 320px) {
+    .normal-control-btn{
+        width: 40px;
+    }
+    .normal-ball {
+        width: 25px;
+        height: 25px;
+    }
+    .random-btn {
+        padding: 5px 2px;
+    }
+    .single-control-btn {
+        width: 40px;
+    }
+    .range-control-btn {
+        width: 40px;
+    }
+    .arrange-control-btn {
+        width: 40px;
+    }
+    .winsix-ball {
+        font-size: 13px;
+        width: 25px;
+        height: 25px;
+    }
+    .game-type {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    .issue-date {
+        font-size: 13px;
+        color: #FFFFFF;
+    }
+    .date {
+        font-size: 13px;
+        color: #FFFFFF;
+    }
+    .extra-ball {
+        width: 25px;
+        height: 25px;
+        font-size: 13px;
+        
+    }
+    .winsix-ball-bank {
+        width: 25px;
+        height: 25px;
+    }
+    .nav-pills .nav-link {
+        font-size: 11px;
+    }
+    #footer .btn {
+        padding: 0 .75rem;
+    }
+    .print-key {
+        height: 50px;
+    }
+
+    /*=============extrawin=========*/
+    .direction-ball {
+        height: 60px;
+        width: 75px;
+        padding: 5px;
+        
+        
+    }
+    .oddeven-ball {
+        height: 70px;
+        width: 90px;
+        padding: 5px;
+        
+    }
+    #winsix .btn-primary {
+        padding: 0;
+    }
+    #get_quote_modal .list-group-item {
+        font-size: 15px;
+        padding: 3px 15px;
+        border: none;
+    }
+
+    .resul-ball {
+        width: 20px;
+        height: 20px;
+        font-size: 13px;
+        
+    }
+    
+   
+}
